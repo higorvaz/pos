@@ -1,0 +1,113 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    color: #fff;
+
+}
+
+.center {
+    float: left;
+    position: relative;
+    left: 50%;
+    top: -20px;
+}
+
+.toolbar li {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.toolbar a,
+.toolbar button {
+    background: cadetblue;
+    color: white;
+    display: block;
+    padding: .5em 10px;
+    position: relative;
+}
+
+.toolbar a:hover,
+.toolbar button:hover {
+    background: #525252;
+}
+
+
+#rib {
+    width: 11rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: Tahoma;
+    background: #4CAF50;
+    /* to allow positioning elements */
+    position: relative;
+    left: 423px;
+    top: -27px;
+}
+
+/* here */
+#rib::after {
+    content: "";
+    /* Shadow effect */
+    border-left: solid #388E3C 0.5rem;
+    z-index: -1;
+    position: absolute;
+    left: 11rem;
+    /* {ParentWidth} - {ShadowWidth} */
+    top: 0.2rem;
+    background: #43A047;
+    width: 1.5rem;
+    height: 2rem;
+}
+
+#rib::before {
+    content: "";
+    /* Shadow effect */
+    border-right: solid #388E3C 0.5rem;
+    z-index: -1;
+    position: absolute;
+    right: 11rem;
+    /* {ParentWidth} - {ShadowWidth} */
+    bottom: 0.3rem;
+    background: #43A047;
+    width: 1.5rem;
+    height: 2rem;
+}
+
+.btn-pos {
+    padding: 20px 31px;
+    font-size: 20px;
+    border-radius: 0px;
+    margin-right: 1px;
+}
+
+btn-summary {
+    margin-right: 5px;
+}
+
+btn-marginTop {
+    margin-top: 5px;
+}
+
+.badge-left {
+    float: none
+}
+
+.list-group-item > .badge {
+    float: none;
+}
